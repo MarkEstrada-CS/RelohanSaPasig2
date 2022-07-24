@@ -1,2 +1,2 @@
-# Relohan-sa-Pasig-2
-V2
+# Relohan-sa-Pasig
+Relohan sa Pasig: A Watch Ordering System in Web Platform

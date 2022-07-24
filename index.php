@@ -1,5 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
+	<meta name="viewport" content=
+		"width=device-width, initial-scale=1.0">
+  <style media="screen">
+    </style>
+    </head>
 <?php session_start() ?>
 <?php 
 	include 'header.php' 
@@ -72,7 +78,7 @@
       <div class="modal-body">
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-primary" id='submit' onclick="$('#uni_modal form').submit()">Save</button>
+        <button type="button" class="btn bg-black" id='submit' onclick="$('#uni_modal form').submit()">Save</button>
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
       </div>
       </div>
@@ -112,12 +118,10 @@
   <!-- Main Footer -->
 
   <footer class="main-footer">
-    <strong>Relohan sa Pasig</strong>
-    <br>
-    <b><a href="FAQ.html" target="_blank">FAQ</a></b>
-    <br>
-    <b><a href="Contact-Us.html" target="_blank">Contact Us</a></b>
-    <br>
+    <b><a href="FAQ.html" target="_blank" >F.A.Q&nbsp;|</a></b>
+    
+    <b><a href="Contact-Us.html" target="_blank">&nbsp;Contact Us&nbsp;|</a></b>
+    
     <b><a href="terms-and-conditions.html" target="_blank">Terms and Conditions</a></b>
     <div class="float-right d-none d-sm-inline-block">
     

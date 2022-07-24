@@ -7,10 +7,27 @@
         <li class="nav-item">
           <!-- <a class="nav-link" data-widget="pushmenu" href="" role="button"><i class="fas fa-bars"></i></a> -->
         </li>
-      <?php endif; ?>
+      
         <li>
           <a class="nav-link text-white"  href="./" role="button"> <large><b>Relohan sa Pasig</b></large></a>
         </li>
+        <!-- accounts option if clicked -->
+        <li class="nav-item dropdown">
+            <a class="nav-link"  data-toggle="dropdown" aria-expanded="true" href="javascript:void(0)">
+              <span>
+                <div class="d-felx badge-pill">
+                  <span class="fa fa-user mr-2"></span>
+                  <span><b><?php echo ucwords($_SESSION['login_firstname']) ?></b></span>
+                  <span class="fa fa-angle-down ml-2"></span>
+                </div>
+              </span>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="account_settings" style="left: -2.5em;">
+              <a class="dropdown-item" href="signup.php" id="manage_my_account"><i class="fa fa-cog"></i> Manage Account</a>
+              <a class="dropdown-item" href="admin/ajax.php?action=logout2"><i class="fa fa-power-off"></i> Logout</a>
+            </div>
+          </li>
+        <?php endif; ?> 
       </ul>
 
       <ul class="navbar-nav ml-auto">
@@ -45,11 +62,11 @@
                 </div>
                 
                 <div class="d-flex bg-light justify-content-center w-100 p-2">
-                    <a href="index.php?page=cart" class="btn btn-sm btn-primary btn-block col-sm-4 text-white"><i class="fa fa-edit"></i>  View Cart</a>
+                    <a href="index.php?page=cart" class="btn btn-sm bg-yellow btn-block col-sm-4 text-white"><i class="fa fa-edit"></i>  View Cart</a>
                 </div>
               </div>
           </li>
-          <li class="nav-item dropdown">
+          <!-- <li class="nav-item dropdown">
             <a class="nav-link"  data-toggle="dropdown" aria-expanded="true" href="javascript:void(0)">
               <span>
                 <div class="d-felx badge-pill">
@@ -63,12 +80,15 @@
               <a class="dropdown-item" href="signup.php" id="manage_my_account"><i class="fa fa-cog"></i> Manage Account</a>
               <a class="dropdown-item" href="admin/ajax.php?action=logout2"><i class="fa fa-power-off"></i> Logout</a>
             </div>
-          </li>
+          </li> -->
         <?php endif; ?>
       </ul>
     </div>
   </nav>
-  <style>
+  <head>
+	<meta name="viewport" content=
+		"width=device-width, initial-scale=1.0">
+  <style media="screen">
      .cart-img {
           width: calc(25%);
           max-height: 13vh;
@@ -87,6 +107,7 @@
       }
 
   </style>
+  </head>
   <!-- /.navbar -->
   <script>
     $(document).ready(function(){

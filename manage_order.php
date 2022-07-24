@@ -2,6 +2,8 @@
 <div class="container-fluid">
 	<div class="col-lg-12">
 		<p>Accepts only cash on delivery. Type in your address and wait patiently. Thank You.</p>
+		<br>
+		<p>For online payment transaction, proceed to the given <a href="https://www.facebook.com/czarryanr" target="_blank">link</a></p>
 		<form id="manage-order">
 			<div class="form-group">
 				<label for="" class="control-label">Delivery Address</label>
